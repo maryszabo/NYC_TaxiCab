@@ -43,7 +43,15 @@
   </nav>
 
   <header class="page-header header container-fluid">
-    <form id="frm1" action="/action_page.php">
+
+    <form action="{{ url_for('gfg')}}" method="post">
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="fname" placeholder="firstname">
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lname" placeholder="lastname">
+      <button type="submit">Login</button>
+    </form>  
+    <!--form id="frm1" action="/action_page.php">
         Start Date (YYYY/MM/DD): <input type="text" name="sdate"><br>
         End Date (YYYY/MM/DD): <input type="text" name="edate"><br>
         Vendor (1, 2, or 3): <input type="text" name="vnum"><br>
@@ -68,35 +76,9 @@ function myFunction() {
   }
   document.getElementById("demo").innerHTML = text;
 }
-</script>
+</script-->
 
-    <!--form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Email address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Example select</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect2">Example multiple select</label>
-          <select multiple class="form-control" id="exampleFormControlSelect2">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        
-      </form-->
+
 
       <button type="submit" class="btn btn-dark" onclick="sendUserInfo()">Search</button>
   </header>
