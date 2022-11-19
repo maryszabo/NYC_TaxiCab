@@ -1,0 +1,138 @@
+<!--referenced this site for basic webpage setup https://websitesetup.org/bootstrap-tutorial-for-beginners/ -->
+<!-- Bootstrap webpage for creating forms https://getbootstrap.com/docs/4.3/components/forms/ -->
+
+<!-- This for getting data values https://www.w3schools.com/js/tryit.asp?filename=tryjs_form_elements -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>TaxiCabSite</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="search.css">
+</head>
+
+<body>
+  <!--header -->
+    <!-- place navbar here -->
+  <!--/header -->
+  <nav class="navbar navbar-expand-md">
+	<a class="navbar-brand" href="#">NYC Taxi Trips Data</a>
+	<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="main-navigation">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="search.html">Search</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="saved.html">Saved Searches</a>
+			</li>
+		</ul>
+	</div>
+  </nav>
+
+  <header class="page-header header container-fluid">
+    <form id="frm1" action="/action_page.php">
+        Start Date (YYYY/MM/DD): <input type="text" name="sdate"><br>
+        End Date (YYYY/MM/DD): <input type="text" name="edate"><br>
+        Vendor (1, 2, or 3): <input type="text" name="vnum"><br>
+        Minimum number of passengers (1-6): <input type="text" name="minPass"><br><br>
+        Maximum number of passengers (1-6): <input type="text" name="maxPass"><br><br>
+        <input type="button" onclick="myFunction()" value="Submit">
+    </form>
+
+    <p>Click "Try it" to display the value of each element in the form.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("frm1");
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+    <!--form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Example select</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect2">Example multiple select</label>
+          <select multiple class="form-control" id="exampleFormControlSelect2">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        
+      </form-->
+
+      <button type="submit" class="btn btn-dark" onclick="sendUserInfo()">Search</button>
+  </header>
+
+  <main>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+
+<!--script>
+    function sendUserInfo() {
+        let userInfo = {
+            'name': 'FIX ME', 
+            'type': 'FIX ME'
+        }
+        const request = new XMLHttpRequest()
+        request.open('POST', '/processUserInof/${JSON.stringigy(userInfo)}')
+        request.onload = () => {
+            const flaskMessage = request.responseText
+            console.log(flaskMessage)
+        }
+        request.send()
+    }
+
+</script-->
+
+</html>
