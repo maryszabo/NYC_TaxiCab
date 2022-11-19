@@ -1,4 +1,5 @@
 <!--referenced this site for basic webpage setup https://websitesetup.org/bootstrap-tutorial-for-beginners/ -->
+<!-- Bootstrap webpage for creating forms https://getbootstrap.com/docs/4.3/components/forms/ -->
 <!doctype html>
 <html lang="en">
 
@@ -39,22 +40,21 @@
   </nav>
 
   <header class="page-header header container-fluid">
-    <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <!--div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div-->
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+    <div class="query1filters">
+      <h1>Taxi Cab and Covid-19 trend</h1>
+      <p>We have collected real world data from the New York City Taxi 
+        and Limousine Commission site. Due to the restriction in database size, 
+        we only have 1% of the day from January 2018 to June 2022.</p>
+      <p>We also have COVID-19 for New Your City ... etc.</p>
+      <a class="btn btn-dark" href="query1filters.html" role="button">Select Filters</a>
+      <!--button class="btn btn-outline-secondary btn-lg">Start Searching</button-->
+  </div>
+  <div class="query2filters">
+    <h1>Distance traveled</h1>
+    <p>Query 2 description</p>
+    <a class="btn btn-dark" href="results.html" role="button">Select Filters</a>
+    <!--button class="btn btn-outline-secondary btn-lg">Start Searching</button-->
+</div>
   </header>
 
   <main>
