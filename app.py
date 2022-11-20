@@ -4,9 +4,13 @@ from flask import Flask,render_template,request
  
 app = Flask(__name__)
  
-@app.route('/')
+@app.route('/query1filters')
 def query1filters():
     return render_template('query1filters.html')
+
+@app.route('/query2filters')
+def query1filters():
+    return render_template('query2filters.html')
  
 @app.route('/results', methods = ['POST', 'GET'])
 def results():

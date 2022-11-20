@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f5f6e9;
+}
+.navbar {
+    background:#f5ed18;
+}
+.nav-link,
+.navbar-brand {
+    color: rgb(14, 14, 14);
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: rgb(67, 12, 232);
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.description {
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+.description h1 {
+	color: #090a09;
+}
+.description p {
+	color: rgb(9, 9, 9);
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+.description button {
+    border:1px solid #0a0a0a;
+    background:#0a0a0a;
+    border-radius: 0;
+    color:#fff;
+}
+.description button:hover {
+	border:1px solid #fff;
+    background:#fff;
+    color:rgb(72, 21, 225);
+}
