@@ -9,7 +9,7 @@ def query1filters():
     return render_template('query1filters.html')
 
 @app.route('/query2filters')
-def query1filters():
+def query2filters():
     return render_template('query2filters.html')
  
 @app.route('/results', methods = ['POST', 'GET'])
