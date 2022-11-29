@@ -1,3 +1,6 @@
+<!--CIS4301 Fall 2022-->
+<!--By Mary Szabo-->
+
 <!--referenced this site for basic webpage setup https://websitesetup.org/bootstrap-tutorial-for-beginners/ -->
 <!-- Bootstrap webpage for creating forms https://getbootstrap.com/docs/4.3/components/forms/ -->
 
@@ -45,45 +48,45 @@
   <header class="page-header header container-fluid">
     <h1></h1>
 
-    <form action="results.html" method = "POST">
-      <p>Start Date (YYYY/MM/DD) <input type = "text" name = "sdate" /></p>
-      <p>End Date (YYYY/MM/DD) <input type = "text" name = "edate" /></p>
-      
-      <label for="vendor">Vendor:</label>
-      <select name="vendor" id="vendor">
-        <option value="all">All</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-      </select>
-      <br><br>
-      
-      <label for="minPass">Minimum number of Passengers:</label>
-      <select name="minPass" id="minPass">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-      </select>
-      <br><br>
-
-      <label for="maxPass">Maximim number of Passengers:</label>
-      <select name="maxPass" id="maxPass">
-        <option value="6">6</option>
-        <option value="5">5</option>
-        <option value="4">4</option>
-        <option value="3">3</option>
-        <option value="2">2</option>
-        <option value="1">1</option>
-      </select>
-      <br><br>
-      <p><input type = "submit" value = "submit" /></p>
-  </form>
-
-  <br>
-  <br>
+    <form action="http://localhost:5000/results" method = "POST">
+        <p>Start Date (YYYY/MM/DD) <input type = "text" name = "sdate" /></p>
+        <p>End Date (YYYY/MM/DD) <input type = "text" name = "edate" /></p>
+        
+        <label for="vendor">Vendor:</label>
+        <select name="vendor" id="vendor">
+          <option value="all">All</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <br><br>
+        
+        <label for="minPass">Minimum number of Passengers:</label>
+        <select name="minPass" id="minPass">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+        <br><br>
+  
+        <label for="maxPass">Maximim number of Passengers:</label>
+        <select name="maxPass" id="maxPass">
+          <option value="6">6</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        <br><br>
+        <p><input type = "submit" value = "submit" /></p>
+    </form>
+  
+    <br>
+    <br>
 
 <!--another form option>
     <form action="{{ url_for('gfg') }}" method="post">
@@ -95,8 +98,8 @@
     </form-->  
 
 
-<!--form using script to send data-->>
-    <!--form id="frm1" action="/action_page.php">
+<!--form using script to send data>>
+    <form id="frm1" action="/action_page.php">
         Start Date (YYYY/MM/DD): <input type="text" name="sdate"><br>
         End Date (YYYY/MM/DD): <input type="text" name="edate"><br>
         Vendor (1, 2, or 3): <input type="text" name="vnum"><br>
@@ -121,10 +124,10 @@ function myFunction() {
   }
   document.getElementById("demo").innerHTML = text;
 }
-</script-->
+</script>
 
 
-      <button type="submit" class="btn btn-dark" onclick="sendUserInfo()">Search</button>
+      <button type="submit" class="btn btn-dark" onclick="sendUserInfo()">Search</button-->
   </header>
 
   <main>
