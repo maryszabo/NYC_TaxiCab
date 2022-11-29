@@ -1,7 +1,22 @@
+<!--CIS4301 Fall 2022-->
+<!--By Mary Szabo-->
+
 <!--referenced this site for basic webpage setup https://websitesetup.org/bootstrap-tutorial-for-beginners/ -->
 <!-- Bootstrap webpage for creating forms https://getbootstrap.com/docs/4.3/components/forms/ -->
 
 <!-- This for getting data values https://www.w3schools.com/js/tryit.asp?filename=tryjs_form_elements -->
+
+<!-- More references 
+      https://www.askpython.com/python-modules/flask/flask-forms
+      https://pythonbasics.org/flask-template-data/#The-template
+      https://code.visualstudio.com/docs/python/tutorial-flask
+      https://www.w3schools.com/tags/tag_select.asp
+      https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select
+      https://pythonbasics.org/flask-template-data/ 
+      https://www.w3schools.com/js/js_json_html.asp 
+      https://www.w3schools.com/js/tryit.asp?filename=tryjs_ajax_database
+      https://www.w3schools.com/js/tryit.asp?filename=tryjs_form_elements
+      https://www.geeksforgeeks.org/retrieving-html-from-data-using-flask/  -->
 
 <!doctype html>
 <html lang="en">
@@ -43,9 +58,13 @@
   </nav>
 
   <header class="page-header header container-fluid">
-    <h1></h1>
+    <h1>Instructions</h1>
+    <p>Please be careful to enter correct data!</p>
+    <p>You must enter dates. The earliest date possible is ####/##/## (YYYY/MM/DD). The latest date possible 
+      is ####/##/## (YYYY/MM/DD).</p> 
+    <p>Vendors: Vendor 1 = </p>
 
-    <form action="results.html" method = "POST">
+    <form action="http://localhost:5000/results" method = "POST">
       <p>Start Date (YYYY/MM/DD) <input type = "text" name = "sdate" /></p>
       <p>End Date (YYYY/MM/DD) <input type = "text" name = "edate" /></p>
       
@@ -124,7 +143,7 @@ function myFunction() {
 </script-->
 
 
-      <button type="submit" class="btn btn-dark" onclick="sendUserInfo()">Search</button>
+      <!--button type="submit" class="btn btn-dark" onclick="sendUserInfo()">Search</button-->
   </header>
 
   <main>
